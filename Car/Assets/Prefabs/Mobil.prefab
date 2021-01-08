@@ -1244,9 +1244,10 @@ GameObject:
   - component: {fileID: 7253617923533639236}
   - component: {fileID: 7253617923533639238}
   - component: {fileID: 7253617923533639237}
+  - component: {fileID: 1830854597}
   m_Layer: 0
   m_Name: Mobil
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1258,7 +1259,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7253617923533639239}
-  m_LocalRotation: {x: 0.002159355, y: -0.38267732, z: -0.005213145, w: 0.92386484}
+  m_LocalRotation: {x: 0.0021606453, y: -0.38267735, z: -0.0052162595, w: 0.92386484}
   m_LocalPosition: {x: 4.09, y: 0.809, z: -23.85}
   m_LocalScale: {x: 0.5358697, y: 0.5358697, z: 0.5358697}
   m_Children:
@@ -1343,6 +1344,19 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1830854597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7253617923533639239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a14780f3cf9a9044e968604042597c9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
 --- !u!1 &7253617923533639241
 GameObject:
   m_ObjectHideFlags: 0
@@ -1641,7 +1655,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: f776a5ff49596864587f61a4cd04d204, type: 2}
-  - {fileID: 2100000, guid: 803fad817ce200e4a8aa95d1ce1f0397, type: 2}
+  - {fileID: 2100000, guid: f776a5ff49596864587f61a4cd04d204, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

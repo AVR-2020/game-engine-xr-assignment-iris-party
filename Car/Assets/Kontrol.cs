@@ -23,7 +23,7 @@ public class Kontrol : MonoBehaviour
     {
         foreach(WheelCollider roda in rodaPenggerak)
         {
-            roda.motorTorque = (200f * Time.deltaTime * masukkan.penggerak) * 10; 
+            roda.motorTorque = (200f * Time.deltaTime * masukkan.penggerak) * 30; 
         }
 
         foreach(GameObject roda in rodaStir)
