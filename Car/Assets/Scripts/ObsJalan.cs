@@ -9,8 +9,8 @@ public class ObsJalan : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-            player.takeDamage();
 
+        other.GetComponent<Player>().takeDamage();
     }
     
 }
