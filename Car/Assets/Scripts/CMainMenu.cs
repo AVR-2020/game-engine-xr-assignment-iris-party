@@ -6,6 +6,7 @@ public class CMainMenu : MonoBehaviour
 {
     public GameObject MainMenu;
     public GameObject HowtoPlay;
+    public GameObject bestTime;
 
     
     void Start()
@@ -17,6 +18,7 @@ public class CMainMenu : MonoBehaviour
     {
         // move to next scene
         UnityEngine.SceneManagement.SceneManager.LoadScene("car");
+        Score.timer = 0;
     }
 
     public void HowtoPLayButton()
@@ -25,12 +27,20 @@ public class CMainMenu : MonoBehaviour
         MainMenu.SetActive(false);
         HowtoPlay.SetActive(true);
     }
+    
+    public void BestTime()
+    {
+
+        MainMenu.SetActive(false);
+        bestTime.SetActive(true);
+    }
 
     public void MainMenuButton()
     {
         
         MainMenu.SetActive(true);
         HowtoPlay.SetActive(false);
+        bestTime.SetActive(false);
     }
 
     public void QuitButton()

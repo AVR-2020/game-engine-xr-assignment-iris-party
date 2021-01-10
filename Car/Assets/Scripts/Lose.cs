@@ -7,11 +7,12 @@ public class Lose : MonoBehaviour
 {
     public void MainMenu()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void Retry()
     {
         SceneManager.LoadScene("car");
+        Score.timer = 0;
     }
 }

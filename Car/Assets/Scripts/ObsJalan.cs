@@ -5,12 +5,14 @@ using UnityEngine;
 public class ObsJalan : MonoBehaviour
 {
 
-    Player player;
+    public Player player;
 
     private void OnTriggerEnter(Collider other)
     {
-
-        other.GetComponent<Player>().takeDamage();
+        if (other.tag == "Player")
+        {
+            other.GetComponent<Player>().takeDamage();
+        }
     }
     
 }

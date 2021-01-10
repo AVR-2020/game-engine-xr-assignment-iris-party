@@ -8,14 +8,18 @@ public class Tutorial : MonoBehaviour
     public Text text;
     public GameObject tutorial;
 
+    void Update()
+    {
+        Time.timeScale = 0f;
+    }
     public void Awal()
     {
-        text.text = "W A S D untuk menjalankan mobil \n";
+        text.text = "Usahakan tidak menabrak apapun yang membatasi tempat parkir";
     }
 
     public void Rambu()
     {
-        text.text = "Jangan melewati garis putih yang membagi jalan jika itu bersambung \n Garis yang tidak bersambung dapat dilewati";
+        text.text = "Marka adalah garis putih yang membagi jalan \nJangan melewati garis putih yang membagi jalan jika itu bersambung \nGaris yang tidak bersambung dapat dilewati";
     }
 
     public void Lampu()
@@ -26,5 +30,6 @@ public class Tutorial : MonoBehaviour
     public void mulai()
     {
         tutorial.SetActive(false);
+        Time.timeScale = 1f;
     }
 }
