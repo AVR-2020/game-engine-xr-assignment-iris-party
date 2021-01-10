@@ -2,17 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class sound_fx : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public AudioSource myFx;
+    public AudioClip hoverFx;
+    public AudioClip clickFx;
 
-    // Update is called once per frame
-    void Update()
+    public void HoverSound()
     {
-        
+        myFx.PlayOneShot(hoverFx);
+    }
+    public void ClickSound()
+    {
+        myFx.PlayOneShot(clickFx);
     }
 }
