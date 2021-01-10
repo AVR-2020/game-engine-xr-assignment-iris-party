@@ -474,9 +474,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24e3aea6c345bf14382f73ec19fd76b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 22344644}
-  hoverFx: {fileID: 8300000, guid: e7b4c2128f53c084b88098a5b60da663, type: 3}
-  clickFx: {fileID: 8300000, guid: 695e181b64f7b804fa47c1656ef33098, type: 3}
 --- !u!82 &22344644
 AudioSource:
   m_ObjectHideFlags: 0
@@ -834,9 +831,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24e3aea6c345bf14382f73ec19fd76b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 134067759}
-  hoverFx: {fileID: 8300000, guid: e7b4c2128f53c084b88098a5b60da663, type: 3}
-  clickFx: {fileID: 8300000, guid: 695e181b64f7b804fa47c1656ef33098, type: 3}
 --- !u!82 &134067759
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1376,6 +1370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02ae031a70dd02847bbcbbaa2c6e3673, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bestTime: {fileID: 963217006}
 --- !u!1 &650359723
 GameObject:
   m_ObjectHideFlags: 0
@@ -1855,9 +1850,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24e3aea6c345bf14382f73ec19fd76b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 897970294}
-  hoverFx: {fileID: 8300000, guid: e7b4c2128f53c084b88098a5b60da663, type: 3}
-  clickFx: {fileID: 8300000, guid: 695e181b64f7b804fa47c1656ef33098, type: 3}
 --- !u!82 &897970294
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2069,6 +2061,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a38a90f410492764397a4eb8adc109c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MainMenu: {fileID: 1923186342}
+  HowtoPlay: {fileID: 62205601}
+  bestTime: {fileID: 632048246}
 --- !u!1 &963217004
 GameObject:
   m_ObjectHideFlags: 0
@@ -2401,9 +2396,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24e3aea6c345bf14382f73ec19fd76b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 1260496481}
-  hoverFx: {fileID: 8300000, guid: e7b4c2128f53c084b88098a5b60da663, type: 3}
-  clickFx: {fileID: 8300000, guid: 695e181b64f7b804fa47c1656ef33098, type: 3}
 --- !u!82 &1260496481
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3345,9 +3337,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24e3aea6c345bf14382f73ec19fd76b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 2120359470}
-  hoverFx: {fileID: 8300000, guid: e7b4c2128f53c084b88098a5b60da663, type: 3}
-  clickFx: {fileID: 8300000, guid: 695e181b64f7b804fa47c1656ef33098, type: 3}
 --- !u!82 &2120359470
 AudioSource:
   m_ObjectHideFlags: 0

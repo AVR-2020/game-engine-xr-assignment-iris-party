@@ -53,6 +53,14 @@ public class Player : MonoBehaviour
             tutorial.SetActive(true);
         }
 
+        if (other.tag == "Zebra")
+        {
+            if (Trafficlight.lampu == 0)
+            {
+                takeDamage();
+            }
+        }
+
         if (other.tag == "Finish")
         {
             finish.SetActive(true);
