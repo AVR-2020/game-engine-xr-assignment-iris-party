@@ -11,7 +11,7 @@ Teams Members
 
 05111640000116 – Muhammad Vicky Ramadhan
 
-05111640000142 – Kurniawan Adji 
+05111640000142 – Kurniawan Adji Saputro
 
 05111640000153 – Chrisnady Anggaiswara
 
