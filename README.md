@@ -3,7 +3,7 @@ VR Driving Simulation by Iris Party
 
 Teams Members
 
-05111640000060-Nada Nibrassalbila Rosadi
+05111640000060 - Nada Nibrassalbila Rosadi
 
 05111640000101 – Bayu Satria Takariputra
 
