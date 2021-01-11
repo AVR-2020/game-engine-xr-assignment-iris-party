@@ -6,56 +6,46 @@ using UnityEngine.UI;
 
 public class Trafficlight : MonoBehaviour
 {
-    public Material Red;
-    public Material Yellow;
-    public Material Green;
-    public Material notRed;
-    public Material notYellow;
-    public Material notGreen;
+    public Color Red;
+    public Color Yellow;
+    public Color Green;
+    public Color notRed;
+    public Color notYellow;
+    public Color notGreen;
     public GameObject Light;
     public static int lampu = 2;
-    public Text waktu;
-    float timer = 0f;
 
     void Start()
     {
-        ChangeLight();
+        StartCoroutine(ChangeLight());
+        
     }
-    
-    public void ChangeLight(){
+
+    public IEnumerator ChangeLight()
+    {
         MeshRenderer changeLight = Light.GetComponent<MeshRenderer>();
+        changeLight.materials[1].SetColor("_Color", Red);
         while(true)
         {
-            changeLight.materials[1] = Red;
-            timer += Time.deltaTime;
-            waktu.text = Mathf.Round(timer).ToString();
+            yield return new WaitForSeconds(10f);
+
+            changeLight.materials[0].SetColor("_Color", notYellow);
+            changeLight.materials[1].SetColor("_Color", notRed);
+            changeLight.materials[2].SetColor("_Color", Green);
+            lampu = 1;
+            yield return new WaitForSeconds(10f);
+
+            changeLight.materials[0].SetColor("_Color", Yellow);
+            changeLight.materials[1].SetColor("_Color", notRed);
+            changeLight.materials[2].SetColor("_Color", notGreen);
+            lampu = 0;
+            yield return new WaitForSeconds(2f);
+
+            changeLight.materials[0].SetColor("_Color", notYellow);
+            changeLight.materials[1].SetColor("_Color", Red);
+            changeLight.materials[2].SetColor("_Color", notGreen);
+            lampu = 2;
             
-            if (timer == 30 && lampu == 2)
-            {
-                timer = 0f;
-                changeLight.materials[0] = notYellow;
-                changeLight.materials[1] = notRed;
-                changeLight.materials[2] = Green;
-                lampu = 1;
-            }
-
-            else if (timer == 30 && lampu == 1)
-            {
-                timer = 0f;
-                changeLight.materials[0] = Yellow;
-                changeLight.materials[1] = notRed;
-                changeLight.materials[2] = notGreen;
-                lampu = 0;
-            }
-
-            else if (timer == 3 && lampu == 0)
-            {
-                timer = 0f;
-                changeLight.materials[0] = notYellow;
-                changeLight.materials[1] = Red;
-                changeLight.materials[2] = notGreen;
-                lampu = 2;
-            }
         }
     }
 }

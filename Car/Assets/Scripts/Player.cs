@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public static int maxHP = 5;
+    public static int maxHP = 3;
     public GameObject lose;
     public GameObject tutorial;
     public GameObject camera;
@@ -55,7 +55,7 @@ public class Player : MonoBehaviour
 
         if (other.tag == "Zebra")
         {
-            if (Trafficlight.lampu == 0)
+            if (Trafficlight.lampu == 2)
             {
                 takeDamage();
             }
